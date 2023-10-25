@@ -13,4 +13,4 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-  Price: int64
+  name: Price
