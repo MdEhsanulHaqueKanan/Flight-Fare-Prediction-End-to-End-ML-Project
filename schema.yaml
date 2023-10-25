@@ -9,6 +9,7 @@ COLUMNS:
   Duration: object
   Total_Stops: object
   Additional_Info: object
+  Price: int64
 
 
 TARGET_COLUMN:
