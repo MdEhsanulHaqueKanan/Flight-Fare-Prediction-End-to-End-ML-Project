@@ -22,7 +22,8 @@ class DataTransformationTrainingPipeline:
                 config = ConfigurationManager()
                 data_transformation_config = config.get_data_transformation_config()
                 data_transformation = DataTransformation(config=data_transformation_config)
-                data_transformation.train_test_spliting()
+                # data_transformation.train_test_spliting()
+                data_transformation.initiate_data_transformation()
 
             else:
                 raise Exception("You data schema is not valid")
