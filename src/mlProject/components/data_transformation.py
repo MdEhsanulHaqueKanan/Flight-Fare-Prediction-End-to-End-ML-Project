@@ -119,6 +119,10 @@ class DataTransformation:
 
         ## further Splitting the data.
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42, shuffle = True) 
+        # New Line Added After Completing Data Transformation Sucessfully
+        y_train.to_csv(os.path.join(self.config.root_dir, "train.csv"),index = False)
+        y_test.to_csv(os.path.join(self.config.root_dir, "test.csv"),index = False)
+        # New Line Ended After Completing Data Transformation Sucessfully        
         logger.info('final splitting the data is successful')
         # logger.info(y_train.shape)
         # logger.info(y_test.shape)        
